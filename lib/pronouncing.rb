@@ -16,6 +16,7 @@ module Pronouncing
         unless is_comment?(line)
           word, phones = line.strip.split("  ")
           formatted_word = format_word(word)
+          add_to_rhymes_dict(formatted_word, phones)
           add_to_words_dict(formatted_word, phones)
         end
       end
@@ -42,6 +43,11 @@ module Pronouncing
       all_pronunciations.map do |phones|
         rhyming_part(phones)
       end
+    end
+
+    def rhymes_for(word)
+      word = clean_word(word)
+      @words[word][:rhyming_parts].map{ |rp| @rhymes[rp] }.flatten
     end
 
     private
@@ -93,6 +99,11 @@ module Pronouncing
           return phones[0..idx].reverse.join(' ')
         end
       end
+    end
+
+    def add_to_rhymes_dict(word, phones)
+      rhyming_part = rhyming_part(phones)
+      @rhymes[rhyming_part] += [word]
     end
   end
 end
