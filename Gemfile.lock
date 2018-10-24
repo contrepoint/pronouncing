@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pronouncing (0.0.0)
+    pronouncing (0.1.0)
 
 GEM
   remote: https://rubygems.org/
