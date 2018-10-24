@@ -1,0 +1,21 @@
+;;;  NOTES  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;  [20080401] (air)  New dict file format introduced
+;;;   - comments (like this section) are allowed
+;;;   - file name is major version; vers/rev information is now in the header
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+A  AH0
+A(1)  EY1
+EXTRAORDINARY  EH2 K S T R AH0 AO1 R D AH0 N EH2 R IY0
+EXTRAORDINARY(1)  IH0 K S T R AO1 R D AH0 N EH2 R IY0
+RUBY  R UW1 B IY0
+DOVE  D AH1 V
+DOVE(1)  D OW1 V
+DAY  D EY1
+TEMPERATE  T EH1 M P R AH0 T
+TEMPERATE(1)  T EH1 M P ER0 AH0 T
+MAY  M EY1
+STROVE  S T R OW1 V
+LOVE  L AH1 V
+MINUTE  M IH1 N AH0 T
+MINUTE(1)  M AY0 N UW1 T
+MINUTE(2)  M AY0 N Y UW1 T
