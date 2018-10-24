@@ -50,6 +50,14 @@ module Pronouncing
       @words[word][:rhyming_parts].map{ |rp| @rhymes[rp] }.flatten
     end
 
+    def rhymes?(word_1, word_2)
+      word_1 = clean_word(word_1)
+      word_2 = clean_word(word_2)
+      return true if word_1 == word_2
+
+      rhymes_for(word_1).include?(word_2)
+    end
+
     private
 
     def is_comment?(line)
